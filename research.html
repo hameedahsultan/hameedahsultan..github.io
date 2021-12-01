@@ -1,0 +1,85 @@
+i<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<title>Hameedah Sultan </title>
+	</head>
+<meta charset="UTF-8">
+<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+		  h1 {font-size: 35px; font-family: cambria; color:white; background-color: #008080; padding:10px;}
+		  p {font-size: 20px; font-family: calibri;}
+		  h2 {font-size: 24px; font-family: calibri;color:maroon;}
+	</style>
+
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-card"  style = "color:white; background-color: #29363c;">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH</a>
+    <a href="publications.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="links.html" class="w3-bar-item w3-button">Useful Links</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="publications.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Useful Links</a>
+</div>
+
+
+<div class="w3-content" style="max-width:1000px;margin-top:46px">
+<div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:1000px; text-align-last: left;" id="research">
+    <h1> Research Projects </h1>	
+<ol>
+    <h2> <li> A Survey of Architectural Thermal Simulators</h2>
+    <p class="w3-justify"> We conducted an exhaustive survey of architectural-level thermal simulation methods. This work was published in ACM Computing Surveys (CSUR) 2019. 
+    <h2> <li> A Fast Leakage Aware Thermal Simulation Method for 3D Chips</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify"> In this work, we developed a fast leakage aware thermal simulator for 3D chips using Green's functions (impulse response of a unit power source). We formulate a set of equations and solve these using novel algebraic techniques and approximations to compute the thermal profile. Our simulator is analytical and exploits the radial symmetry in the thermal profile to reduce a 2D Fourier transform to a 1D Hankel transform. We obtain a 68X speedup as compared to competing simulators with an error limited to 1.5&degC. This work was published in DATE 2017. 
+    </li>
+    <h2> <li> A Fast Leakage Aware Thermal Simulation Method for 3D Chips with Microchannels</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify"> We extend the previous work to model the temperature profile in chips with microchannels using novel <i> residual Green's functions </i>. The boundary effects have been handled using a novel edge correction approach. Additionally, we incorporate piecewise linear leakage models in this work for improved accuracy. This work has been accepted in TVLSI.
+    </li>
+    <h2> <li> Analytical Variability Aware Thermal Simulation</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify">Process variation is increasingly becoming important as the device dimensions are decreasing. So, in this work, we consider the effects of process variation, temperature-dependent leakage power, and temperature-dependent conductivity together, and propose a closed-form solution for the Green's function considering all these effects. We reduce computations by identifying similar regions in the chip using k-means clustering during the process of computing the thermal map. We obtained a 700,000X speedup over state-of-the-art proposals with a mean absolute error limited to 0.7&degC (1.5%). This work was published in DAC 2020. 
+    </li>
+    <h2> <li> System-level Thermal Modeling</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify">In this work, we propose an ultra-fast Green's function-based system-level thermal modeling approach for smartphones and tablets. We also propose fast polynomial models to quickly adapt the Green's function for a range of design parameters. This work has been published in VLSID 2021, where it won the best student paper award.
+    </li>
+    <h2> <li> Nanoscale Thermal Modeling</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify">Traditional thermal simulation methods are based on solving the Fourier equation, which fails to hold at the nanometer level. At such small scales, quantum effects come into play, and the Boltzmann equation has to be solved. In this work, we propose a hybrid Fourier-Boltzmann framework to compute the full-chip thermal profile. In this method, the temperature profile at the chip-level is obtained by solving the Fourier equation, and at the standard cell level, the gray Boltzmann equation is solved to obtain the thermal profile. These two are superimposed to obtain an accurate full-chip thermal profile. We propose fast analytical methods to solve both of these equations.
+This work was published in ICCAD 2019, where it was nominated for the best paper award.
+    </li>
+    <h2> <li> Noise aware Scheduling in Data Centers</h2>
+    <!--p class="w3-opacity"><i>We love music</i></p-->
+    <p class="w3-justify">In developing countries as well as small scale enterprises, employees often have to work near servers. These servers produce a lot of noise, which reduces employee productivity and can lead to long-term hearing problems. In this paper, we propose two heuristics to schedule workloads such that noise at targeted locations is reduced while keeping the temperature under certain thresholds. This paper was published in ICS 2016.
+    </li>
+
+</ol>
+
+</div>
+
